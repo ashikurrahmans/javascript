@@ -96,6 +96,26 @@ const friendsName = oddFriend(friends);
 
 
 
+const products = [
+    {name:"Samsung",price:233353,model:"Gtx"},
+    {name:"Huawai",price:54575,model:"trc"},
+    {name:"Oppo",price:875412,model:"rtx"},
+    {name:"Iphone laptop",price:745150,model:"ftx"},
+    {name:"Xiomi",price:542451,model:"ttx"},
+    {name:"Samsung",price:457752,model:"etx"},
+]
+
+function productSearch(products,search){
+    for(const product of products){
+        if(product.name.includes(search)){
+            console.log(product)
+        }
+}
+}
+
+const productSearches = productSearch(products,"laptop");
+console.log(productSearches)
+
 
 
 
